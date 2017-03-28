@@ -1,0 +1,13 @@
+Find hash of commit before merge of feature/branch
+    git l
+Change the master back to the state before merge of feature/branch
+    git reset --hard <hash>
+Review changes, the feature/branch "completely" gone, oops
+    git l
+
+find the lost hash in git reflog
+    git reflog
+move head to the found hash
+    git checkout <hash>
+review result, it's back!
+    git l

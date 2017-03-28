@@ -1,0 +1,7 @@
+git config --global user.name "Your Name"
+git config --global user.email your.name@example.com
+git config --global alias.l "log --graph --decorate --oneline --all --date-order"
+
+# optional:
+git config --global merge.conflictstyle diff3
+git config --global core.editor notepad

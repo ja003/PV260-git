@@ -1,0 +1,16 @@
+# setting kdiff 3 as merge tool
+# after that is set, you can start merging using kdiff run `git mergetool`
+
+git config --global --add merge.tool kdiff3
+git config --global --add mergetool.kdiff3.path "C:/Program Files/KDiff3/kdiff3.exe"
+git config --global --add mergetool.kdiff3.trustExitCode false
+git config --global --add mergetool.keepBackup false
+
+git config --global --add diff.guitool kdiff3
+git config --global --add difftool.kdiff3.path "C:/Program Files/KDiff3/kdiff3.exe"
+git config --global --add difftool.kdiff3.trustExitCode false
+
+
+# 3 way merge
+git config --global merge.conflictstyle diff3
+

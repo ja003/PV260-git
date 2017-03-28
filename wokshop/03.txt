@@ -1,0 +1,21 @@
+create README.md, readme.tmp, lf.js, crlf.html
+create .gitignore and make git ignore readme.tmp
+create .gitattributes to transform line endings in crlf.html from lf to crlf and lf.js from crlf to lf
+
+```
+# Content of .gitattributes
+# .js files will be checked out with lf
+# .html files will be checked out with crlf
+*.js text eol=lf
+*.html text eol=crlf
+```
+
+git add -A
+git commit -m "added a lot of files but no readme.tmp"
+git status
+git l
+delete all files, check them out and see the line endings
+
+
+
+

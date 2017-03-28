@@ -1,0 +1,58 @@
+Start from master
+    git checkout master
+Create branch from the current master
+    git branch feature/simple-rebasing
+Checkout master and do some coding
+    git checkout master
+    notepad index.js
+```
+function hello(name, arg2,arg3) {
+
+}
+```
+    git commit -am "added argument3 on master"
+    notepad index.js
+```
+function hello(name, arg2,arg3,arg4) {
+
+}
+```
+    git commit -am "added argument4 on master"
+    notepad index.js
+```
+function hello(name, arg2,arg3,arg4,arg5) {
+
+}
+```
+    git commit -am "added argument5 on master"
+    notepad index.js
+```
+function hello(name, arg2,arg3,arg4,arg5,arg6) {
+
+}
+```
+    git commit -am "added argument6 on master"
+review changes
+    git l
+switch to simple-rebasing
+    git checkout feature/simple-rebasing
+do some work:
+    notepad bye.js
+```
+function bye() {
+
+}
+```
+    git add bye.js
+    git commit -m "adds bye.js"
+    notepad bye.js
+```
+function bye() {
+    //some new stuff
+}
+```
+    git commit -am "adds new stuff to bye.js"
+Rebase feature/simple-rebasing on top of master
+    git rebase master
+Review changes
+    git l

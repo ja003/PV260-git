@@ -1,0 +1,60 @@
+Start from commit where feature/simple-rebasing originated. The has find in history
+    git l
+    git checkout <found-hash>
+Create feature branch
+    git checkout -b feature/rebasing
+Add argument3 to hello function
+    notepad index.js
+```
+function hello(name, arg2, a3) {
+
+}
+```
+    git commit -am "added argument3 on feature/rebasing"
+Add argument4 to hello function
+    notepad index.js
+```
+function hello(name, arg2, a3, a4) {
+
+}
+```
+    git commit -am "added argument4 on feature/rebasing"
+Add argument5 to hello function
+    notepad index.js
+```
+function hello(name, arg2, a3, a4, a5) {
+
+}
+```
+    git commit -am "added argument5 on feature/rebasing"
+review changes
+    git l
+
+Checkout rebasing
+    git checkout feature/rebasing
+Try to rebase on top of master, but do not finish the process and abort it
+    git rebase master
+
+Uffff, bad things happened. abort the rebasing
+    git rebase --abort
+Interactive rebase to the rescue!
+    
+
+    
+rewrite message of the commit where was added 3rd argument to "git l"(HEAD~3 means 3 last commits)
+    git rebase -i HEAD~3
+    pick -> reword
+squash latest commits adding the arguments into one
+    git rebase -i HEAD~3
+    pick -> squash
+review result
+    git l
+rebase on top of master
+    git rebase master
+solve conflicts
+    notepad index.js
+    git add index.js
+    git commit
+
+
+

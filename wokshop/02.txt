@@ -1,0 +1,20 @@
+Create folder workshop
+    mkdir workshop
+Execute git init
+    cd workshop
+    git init
+Explore hidden .git folder, which was created
+    cd .git
+    ls
+Try git status
+    cd..
+    git status
+Create file readme.txt
+    notepad readme.txt
+Add the readme.txt
+    git add readme.txt
+    git rm --cached readme.txt
+    git add readme.txt
+Commit the readme.txt
+    git commit -m "added readme.txt"
+Try git l

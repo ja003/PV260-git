@@ -1,0 +1,23 @@
+find has of killing new feature
+    git l
+    remember hash of commit you want to revert
+revert the commit
+    git revert <hash>
+if conflicts, resolve
+    notepad index.js
+    git add index.js
+    git commit
+see result
+    git l
+Oooooops, the revert was not enough, add to the revert commit one last change in index.js 
+    notepad index.js
+```
+function hello(name) {
+
+}
+```
+add this change to the last commit
+    git add index.js
+    git commit --amend
+review changes
+    git l

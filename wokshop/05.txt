@@ -1,0 +1,41 @@
+Checkout feature branch
+    git checkout feature/branch
+Edit and commit change index.js
+    notepad index.js
+```
+function hello(name, arg2) {
+    //killing new feature
+}
+```
+    git add index.js
+    git commit -m "adds argument2 in feature/branch"
+Checkout master branch
+    git checkout master
+Edit and commit different change of the first line
+    notepad index.js
+```
+function hello(name,arg2) {
+
+}
+```
+    git add index.js
+    git commit -m "adds argument2 in master"
+    git l
+Checkout feature branch and merge master
+    git checkout feature/branch
+    git merge master
+Edit file
+    notepad index.js
+Commit it
+    git commit
+Look at the nice graph
+    Git l
+Checkout master branch and try delete the feature branch	
+    git checkout master
+    git branch -d feature/branch
+Merge feature branch to master
+    git merge feature/branch
+Try to delete the feature branch again
+    git branch -d feature/branch
+View the git log
+	git l

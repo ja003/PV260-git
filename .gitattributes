@@ -1,0 +1,5 @@
+# Content of .gitattributes
+# .js files will be checked out with lf
+# .html files will be checked out with crlf
+*.js text eol=lf
+*.html text eol=crlf

@@ -1,0 +1,33 @@
+Create and commit index.js with to master
+    notepad index.js
+
+```
+function hello(name) {
+
+}
+```
+
+    git add index.js
+    git commit -m "index.js in master"
+    git l
+Create new branch and switch to it
+    1st way: git branch feature/branch
+             git checkout feature/branch
+    2nd way: git checkout -b feature/branch
+See git l where is HEAD
+    git l
+See the status of the branch
+    git status
+Make change to the file
+    notepad index.js
+```
+function hello(name) {
+    //killing new feature
+}
+```
+See the status of the branch
+    git status
+Commit changes to the branch
+    git add index.js
+    git commit -m "adds killing new feature in feature/branch"
+
